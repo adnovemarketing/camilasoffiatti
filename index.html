@@ -1,13 +1,20 @@
 <!DOCTYPE html>
 
-<html class="dark" lang="pt-BR"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script id="tailwind-config">
+<html class="dark" lang="pt-BR">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
         tailwind.config = {
             darkMode: "class",
             theme: {
@@ -20,319 +27,416 @@
                     fontFamily: {
                         "display": ["Manrope"]
                     },
-                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
                 },
             },
         }
     </script>
-<style>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
         body {
             font-family: 'Manrope', sans-serif;
         }
+
         .material-symbols-outlined {
             font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
         }
     </style>
 </head>
+
 <body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 antialiased">
-<!-- Navigation -->
-<header class="sticky top-0 z-50 w-full border-b border-slate-200 dark:border-slate-800 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md">
-<div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-<div class="flex items-center gap-3">
-<div class="bg-primary p-2 rounded-lg">
-<span class="material-symbols-outlined text-white text-2xl">medical_services</span>
-</div>
-<span class="text-xl font-extrabold tracking-tight text-slate-900 dark:text-slate-50 uppercase">Dra. Camila Soffiatti</span>
-</div>
-<nav class="hidden md:flex items-center gap-10">
-<a class="text-sm font-semibold hover:text-primary transition-colors" href="#especialidades">Especialidades</a>
-<a class="text-sm font-semibold hover:text-primary transition-colors" href="#sobre">Sobre</a>
-<a class="text-sm font-semibold hover:text-primary transition-colors" href="#beneficios">Benefícios</a>
-<a class="text-sm font-semibold hover:text-primary transition-colors" href="#depoimentos">Depoimentos</a>
-</nav>
-<button class="bg-primary hover:bg-primary/90 text-white px-6 py-2.5 rounded-full font-bold text-sm transition-all shadow-lg shadow-primary/20">
+    <!-- Navigation -->
+    <header
+        class="sticky top-0 z-50 w-full border-b border-slate-200 dark:border-slate-800 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="bg-primary p-2 rounded-lg">
+                    <span class="material-symbols-outlined text-white text-2xl">medical_services</span>
+                </div>
+                <span class="text-xl font-extrabold tracking-tight text-slate-900 dark:text-slate-50 uppercase">Dra.
+                    Camila Soffiatti</span>
+            </div>
+            <nav class="hidden md:flex items-center gap-10">
+                <a class="text-sm font-semibold hover:text-primary transition-colors"
+                    href="#especialidades">Especialidades</a>
+                <a class="text-sm font-semibold hover:text-primary transition-colors" href="#sobre">Sobre</a>
+                <a class="text-sm font-semibold hover:text-primary transition-colors" href="#beneficios">Benefícios</a>
+                <a class="text-sm font-semibold hover:text-primary transition-colors"
+                    href="#depoimentos">Depoimentos</a>
+            </nav>
+            <a class="bg-primary hover:bg-primary/90 text-white px-6 py-2.5 rounded-full font-bold text-sm transition-all shadow-lg shadow-primary/20 inline-block text-center"
+                href="https://wa.me/5519993191957" rel="noopener noreferrer" target="_blank">
                 Agendar Consulta
-            </button>
-</div>
-</header>
-<main>
-<!-- Hero Section -->
-<section class="relative overflow-hidden pt-16 pb-24 lg:pt-24 lg:pb-32">
-<div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center">
-<div class="relative z-10 space-y-8">
-<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs font-bold uppercase tracking-wider">
-<span class="relative flex h-2 w-2">
-<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
-<span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
-</span>
+            </a>
+        </div>
+    </header>
+    <main>
+        <!-- Hero Section -->
+        <section class="relative overflow-hidden pt-16 pb-24 lg:pt-24 lg:pb-32">
+            <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center">
+                <div class="relative z-10 space-y-8">
+                    <div
+                        class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs font-bold uppercase tracking-wider">
+                        <span class="relative flex h-2 w-2">
+                            <span
+                                class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+                            <span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+                        </span>
                         Excelência em Reabilitação
                     </div>
-<h1 class="text-4xl md:text-6xl font-extrabold leading-[1.1] tracking-tight text-slate-900 dark:text-white">
-                        Recupere sua qualidade de vida com <span class="text-primary">reabilitação especializada</span> e acolhimento clínico.
+                    <h1
+                        class="text-4xl md:text-6xl font-extrabold leading-[1.1] tracking-tight text-slate-900 dark:text-white">
+                        Recupere sua qualidade de vida com <span class="text-primary">reabilitação especializada</span>
+                        e acolhimento clínico.
                     </h1>
-<p class="text-lg md:text-xl text-slate-600 dark:text-slate-400 max-w-xl">
-                        Tratamentos personalizados em fisioterapia e fonoaudiologia para quem busca resultados reais e um atendimento de alto padrão.
+                    <p class="text-lg md:text-xl text-slate-600 dark:text-slate-400 max-w-xl">
+                        Tratamentos personalizados em fisioterapia e fonoaudiologia para quem busca resultados reais e
+                        um atendimento de alto padrão.
                     </p>
-<div class="flex flex-col sm:flex-row gap-4">
-<button class="px-8 py-4 bg-primary text-white font-bold rounded-xl text-lg hover:scale-[1.02] transition-transform flex items-center justify-center gap-2">
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a class="px-8 py-4 bg-primary text-white font-bold rounded-xl text-lg hover:scale-[1.02] transition-transform flex items-center justify-center gap-2"
+                            href="https://wa.me/5519993191957" rel="noopener noreferrer" target="_blank">
                             Agendar Consulta <span class="material-symbols-outlined">calendar_month</span>
-</button>
-<button class="px-8 py-4 bg-slate-200 dark:bg-slate-800 text-slate-900 dark:text-white font-bold rounded-xl text-lg hover:bg-slate-300 dark:hover:bg-slate-700 transition-colors">
+                        </a>
+                        <a class="px-8 py-4 bg-slate-200 dark:bg-slate-800 text-slate-900 dark:text-white font-bold rounded-xl text-lg hover:bg-slate-300 dark:hover:bg-slate-700 transition-colors flex items-center justify-center"
+                            href="#especialidades">
                             Ver Especialidades
-                        </button>
-</div>
-</div>
-<div class="relative group">
-<div class="absolute -inset-4 bg-primary/20 blur-3xl rounded-full opacity-30 group-hover:opacity-50 transition-opacity"></div>
-<div class="relative aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl border-8 border-white/5 dark:border-slate-800/50">
-<img class="w-full h-full object-cover" data-alt="Portrait of Dra. Camila Soffiatti in green clinical scrubs" src="Perfil.jpg"/>
-</div>
-</div>
-</div>
-</section>
-<!-- Specializations -->
-<section class="py-24 bg-slate-50 dark:bg-slate-900/50" id="especialidades">
-<div class="max-w-7xl mx-auto px-6">
-<div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
-<h2 class="text-primary font-bold uppercase tracking-widest text-sm">Nossa Expertise</h2>
-<h3 class="text-3xl md:text-4xl font-extrabold text-slate-900 dark:text-white">Especialidades Clínicas</h3>
-<p class="text-slate-600 dark:text-slate-400">Oferecemos soluções avançadas com foco na restauração das funções vitais e do seu bem-estar.</p>
-</div>
-<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-<!-- DTM -->
-<div class="bg-white dark:bg-slate-800 p-8 rounded-2xl border border-slate-200 dark:border-slate-700 hover:border-primary/50 transition-all group shadow-sm hover:shadow-xl">
-<div class="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center text-primary mb-6 group-hover:scale-110 transition-transform">
-<span class="material-symbols-outlined text-3xl">dentistry</span>
-</div>
-<h4 class="text-xl font-bold mb-3 text-slate-900 dark:text-white">DTM</h4>
-<p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">Tratamento especializado para disfunções temporomandibulares e alívio de dores orofaciais crônicas.</p>
-</div>
-<!-- Disfagia -->
-<div class="bg-white dark:bg-slate-800 p-8 rounded-2xl border border-slate-200 dark:border-slate-700 hover:border-primary/50 transition-all group shadow-sm hover:shadow-xl">
-<div class="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center text-primary mb-6 group-hover:scale-110 transition-transform">
-<span class="material-symbols-outlined text-3xl">ecg_heart</span>
-</div>
-<h4 class="text-xl font-bold mb-3 text-slate-900 dark:text-white">Disfagia</h4>
-<p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">Reabilitação segura da deglutição para pacientes com dificuldades alimentares e distúrbios motores.</p>
-</div>
-<!-- Paralisia Facial -->
-<div class="bg-white dark:bg-slate-800 p-8 rounded-2xl border border-slate-200 dark:border-slate-700 hover:border-primary/50 transition-all group shadow-sm hover:shadow-xl">
-<div class="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center text-primary mb-6 group-hover:scale-110 transition-transform">
-<span class="material-symbols-outlined text-3xl">face</span>
-</div>
-<h4 class="text-xl font-bold mb-3 text-slate-900 dark:text-white">Paralisia Facial</h4>
-<p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">Protocolos modernos para recuperação da mímica facial e funcionalidade estética e motora.</p>
-</div>
-<!-- Reabilitação Neurológica -->
-<div class="bg-white dark:bg-slate-800 p-8 rounded-2xl border border-slate-200 dark:border-slate-700 hover:border-primary/50 transition-all group shadow-sm hover:shadow-xl">
-<div class="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center text-primary mb-6 group-hover:scale-110 transition-transform">
-<span class="material-symbols-outlined text-3xl">psychology</span>
-</div>
-<h4 class="text-xl font-bold mb-3 text-slate-900 dark:text-white">Neurológica</h4>
-<p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">Cuidado focado em AVC e Parkinson para devolver autonomia, mobilidade e independência.</p>
-</div>
-</div>
-</div>
-</section>
-<!-- About Section -->
-<section class="py-24" id="sobre">
-<div class="max-w-7xl mx-auto px-6">
-<div class="flex flex-col lg:flex-row gap-16 items-center">
-<div class="lg:w-1/2 grid grid-cols-2 gap-4">
-<div class="space-y-4">
-<div class="aspect-[3/4] rounded-2xl overflow-hidden shadow-lg border border-slate-200 dark:border-slate-800">
-<img class="w-full h-full object-cover" data-alt="Close up of a clinical consultation session" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC8JAg0jTgntyFokhOgQQxvyamzPHUGMNgLSmBTwQuLI38HwyhyCmCTFOXtJxwhSXuSEaXB8e6bVDxqBalQSZLjnmYiov78DOIAHIh_GnSEymfMVvC1g32RXq6opMocPJds0mkaMe2trTmfhnxv6YkZ-3OUmE9nTrX-lMDmezUKW7Nj6VCdAetIcnpBxJOQasky76e8f90FKTuuHrWfX-z03dWFeDe6MArLwJAki8xgahy9F06Z4ADpypirX15xPASl0bwbOHfjyYgg"/>
-</div>
-<div class="bg-primary aspect-square rounded-2xl flex flex-col items-center justify-center text-white p-6 text-center shadow-lg">
-<span class="text-4xl font-black">+10</span>
-<span class="text-xs font-bold uppercase opacity-80">Anos de Experiência</span>
-</div>
-</div>
-<div class="pt-12 space-y-4">
-<div class="aspect-[3/4] rounded-2xl overflow-hidden shadow-lg border border-slate-200 dark:border-slate-800">
-<img class="w-full h-full object-cover" data-alt="Modern medical equipment and therapy room" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDpHx_CBOgouAWL6cUFW0_lmVuw734G0kAlz1ALzUCYnjSUoqmPrWu7bLAwYZWudx-rhjQOD6yXYbZLfdEsk4-UEo5A9Vj4AE2UzBWC1wtKGuB0rel6QiA6QFI-J3AnVGrqEjy0HBytqaTtSI_oi56M4hsa4XZfftsTFzI68oxp9e5IQfvzTWuF4XPPyqfK1qJZPvbEApEKGtWO_xIQTt_QmyGmV-mblw9OzXV_cnUiXbNn38ax8SdI3vvbNz42eDpvx5T_FWJ53zMv"/>
-</div>
-</div>
-</div>
-<div class="lg:w-1/2 space-y-6">
-<h2 class="text-primary font-bold uppercase tracking-widest text-sm">Trajetória e Dedicação</h2>
-<h3 class="text-4xl font-extrabold text-slate-900 dark:text-white leading-tight">Dra. Camila Soffiatti: Autoridade e Empatia na Reabilitação</h3>
-<p class="text-slate-600 dark:text-slate-400 text-lg">
-                            Com formação sólida e anos de experiência clínica, Dra. Camila une o rigor científico à humanização do atendimento. Sua missão é transformar vidas através de um plano terapêutico exclusivo e personalizado.
+                        </a>
+                    </div>
+                </div>
+                <div class="relative group">
+                    <div
+                        class="absolute -inset-4 bg-primary/20 blur-3xl rounded-full opacity-30 group-hover:opacity-50 transition-opacity">
+                    </div>
+                    <div
+                        class="relative aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl border-8 border-white/5 dark:border-slate-800/50">
+                        <img class="w-full h-full object-cover"
+                            data-alt="Portrait of Dra. Camila Soffiatti in green clinical scrubs" src="Perfil.jpg" />
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Specializations -->
+        <section class="py-24 bg-slate-50 dark:bg-slate-900/50" id="especialidades">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                    <h2 class="text-primary font-bold uppercase tracking-widest text-sm">Nossa Expertise</h2>
+                    <h3 class="text-3xl md:text-4xl font-extrabold text-slate-900 dark:text-white">Especialidades
+                        Clínicas</h3>
+                    <p class="text-slate-600 dark:text-slate-400">Oferecemos soluções avançadas com foco na restauração
+                        das funções vitais e do seu bem-estar.</p>
+                </div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <!-- DTM -->
+                    <div
+                        class="bg-white dark:bg-slate-800 p-8 rounded-2xl border border-slate-200 dark:border-slate-700 hover:border-primary/50 transition-all group shadow-sm hover:shadow-xl">
+                        <div
+                            class="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center text-primary mb-6 group-hover:scale-110 transition-transform">
+                            <span class="material-symbols-outlined text-3xl">dentistry</span>
+                        </div>
+                        <h4 class="text-xl font-bold mb-3 text-slate-900 dark:text-white">DTM</h4>
+                        <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">Tratamento especializado
+                            para disfunções temporomandibulares e alívio de dores orofaciais crônicas.</p>
+                    </div>
+                    <!-- Disfagia -->
+                    <div
+                        class="bg-white dark:bg-slate-800 p-8 rounded-2xl border border-slate-200 dark:border-slate-700 hover:border-primary/50 transition-all group shadow-sm hover:shadow-xl">
+                        <div
+                            class="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center text-primary mb-6 group-hover:scale-110 transition-transform">
+                            <span class="material-symbols-outlined text-3xl">ecg_heart</span>
+                        </div>
+                        <h4 class="text-xl font-bold mb-3 text-slate-900 dark:text-white">Disfagia</h4>
+                        <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">Reabilitação segura da
+                            deglutição para pacientes com dificuldades alimentares e distúrbios motores.</p>
+                    </div>
+                    <!-- Paralisia Facial -->
+                    <div
+                        class="bg-white dark:bg-slate-800 p-8 rounded-2xl border border-slate-200 dark:border-slate-700 hover:border-primary/50 transition-all group shadow-sm hover:shadow-xl">
+                        <div
+                            class="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center text-primary mb-6 group-hover:scale-110 transition-transform">
+                            <span class="material-symbols-outlined text-3xl">face</span>
+                        </div>
+                        <h4 class="text-xl font-bold mb-3 text-slate-900 dark:text-white">Paralisia Facial</h4>
+                        <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">Protocolos modernos para
+                            recuperação da mímica facial e funcionalidade estética e motora.</p>
+                    </div>
+                    <!-- Reabilitação Neurológica -->
+                    <div
+                        class="bg-white dark:bg-slate-800 p-8 rounded-2xl border border-slate-200 dark:border-slate-700 hover:border-primary/50 transition-all group shadow-sm hover:shadow-xl">
+                        <div
+                            class="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center text-primary mb-6 group-hover:scale-110 transition-transform">
+                            <span class="material-symbols-outlined text-3xl">psychology</span>
+                        </div>
+                        <h4 class="text-xl font-bold mb-3 text-slate-900 dark:text-white">Neurológica</h4>
+                        <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">Cuidado focado em AVC e
+                            Parkinson para devolver autonomia, mobilidade e independência.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- About Section -->
+        <section class="py-24" id="sobre">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="flex flex-col lg:flex-row gap-16 items-center">
+                    <div class="lg:w-1/2 grid grid-cols-2 gap-4">
+                        <div class="space-y-4">
+                            <div
+                                class="aspect-[3/4] rounded-2xl overflow-hidden shadow-lg border border-slate-200 dark:border-slate-800">
+                                <img class="w-full h-full object-cover"
+                                    data-alt="Close up of a clinical consultation session"
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuC8JAg0jTgntyFokhOgQQxvyamzPHUGMNgLSmBTwQuLI38HwyhyCmCTFOXtJxwhSXuSEaXB8e6bVDxqBalQSZLjnmYiov78DOIAHIh_GnSEymfMVvC1g32RXq6opMocPJds0mkaMe2trTmfhnxv6YkZ-3OUmE9nTrX-lMDmezUKW7Nj6VCdAetIcnpBxJOQasky76e8f90FKTuuHrWfX-z03dWFeDe6MArLwJAki8xgahy9F06Z4ADpypirX15xPASl0bwbOHfjyYgg" />
+                            </div>
+                            <div
+                                class="bg-primary aspect-square rounded-2xl flex flex-col items-center justify-center text-white p-6 text-center shadow-lg">
+                                <span class="text-4xl font-black">+10</span>
+                                <span class="text-xs font-bold uppercase opacity-80">Anos de Experiência</span>
+                            </div>
+                        </div>
+                        <div class="pt-12 space-y-4">
+                            <div
+                                class="aspect-[3/4] rounded-2xl overflow-hidden shadow-lg border border-slate-200 dark:border-slate-800">
+                                <img class="w-full h-full object-cover"
+                                    data-alt="Modern medical equipment and therapy room"
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDpHx_CBOgouAWL6cUFW0_lmVuw734G0kAlz1ALzUCYnjSUoqmPrWu7bLAwYZWudx-rhjQOD6yXYbZLfdEsk4-UEo5A9Vj4AE2UzBWC1wtKGuB0rel6QiA6QFI-J3AnVGrqEjy0HBytqaTtSI_oi56M4hsa4XZfftsTFzI68oxp9e5IQfvzTWuF4XPPyqfK1qJZPvbEApEKGtWO_xIQTt_QmyGmV-mblw9OzXV_cnUiXbNn38ax8SdI3vvbNz42eDpvx5T_FWJ53zMv" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lg:w-1/2 space-y-6">
+                        <h2 class="text-primary font-bold uppercase tracking-widest text-sm">Trajetória e Dedicação</h2>
+                        <h3 class="text-4xl font-extrabold text-slate-900 dark:text-white leading-tight">Dra. Camila
+                            Soffiatti: Autoridade e Empatia na Reabilitação</h3>
+                        <p class="text-slate-600 dark:text-slate-400 text-lg">
+                            Com formação sólida e anos de experiência clínica, Dra. Camila une o rigor científico à
+                            humanização do atendimento. Sua missão é transformar vidas através de um plano terapêutico
+                            exclusivo e personalizado.
                         </p>
-<ul class="space-y-4">
-<li class="flex items-start gap-3">
-<span class="material-symbols-outlined text-primary">verified</span>
-<span class="text-slate-700 dark:text-slate-300 font-medium italic">Referência em Fisioterapia Orofacial e Fonoaudiologia Clínica.</span>
-</li>
-<li class="flex items-start gap-3">
-<span class="material-symbols-outlined text-primary">verified</span>
-<span class="text-slate-700 dark:text-slate-300 font-medium italic">Especialista em distúrbios neurológicos complexos.</span>
-</li>
-<li class="flex items-start gap-3">
-<span class="material-symbols-outlined text-primary">verified</span>
-<span class="text-slate-700 dark:text-slate-300 font-medium italic">Foco constante em atualização científica e novas tecnologias.</span>
-</li>
-</ul>
-<div class="pt-6">
-<button class="bg-slate-900 dark:bg-white text-white dark:text-slate-900 px-8 py-4 rounded-xl font-bold flex items-center gap-2 hover:scale-105 transition-transform">
+                        <ul class="space-y-4">
+                            <li class="flex items-start gap-3">
+                                <span class="material-symbols-outlined text-primary">verified</span>
+                                <span class="text-slate-700 dark:text-slate-300 font-medium italic">Referência em
+                                    Fisioterapia Orofacial e Fonoaudiologia Clínica.</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="material-symbols-outlined text-primary">verified</span>
+                                <span class="text-slate-700 dark:text-slate-300 font-medium italic">Especialista em
+                                    distúrbios neurológicos complexos.</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="material-symbols-outlined text-primary">verified</span>
+                                <span class="text-slate-700 dark:text-slate-300 font-medium italic">Foco constante em
+                                    atualização científica e novas tecnologias.</span>
+                            </li>
+                        </ul>
+                        <div class="pt-6">
+                            <button
+                                class="bg-slate-900 dark:bg-white text-white dark:text-slate-900 px-8 py-4 rounded-xl font-bold flex items-center gap-2 hover:scale-105 transition-transform">
                                 Conhecer Currículo Completo
                             </button>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- PAS / Benefits -->
-<section class="py-24 bg-primary text-white overflow-hidden relative" id="beneficios">
-<div class="absolute top-0 right-0 -translate-y-1/2 translate-x-1/2 w-96 h-96 bg-white/10 rounded-full blur-3xl"></div>
-<div class="max-w-7xl mx-auto px-6 relative z-10">
-<div class="max-w-3xl mx-auto text-center space-y-8">
-<h2 class="text-4xl md:text-5xl font-extrabold tracking-tight">Viver sem dor é possível</h2>
-<p class="text-xl opacity-90 leading-relaxed">
-                        Não deixe que o desconforto limite sua rotina ou tire sua liberdade. Recupere suas funções vitais com um método que respeita o seu tempo e o seu corpo.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- PAS / Benefits -->
+        <section class="py-24 bg-primary text-white overflow-hidden relative" id="beneficios">
+            <div
+                class="absolute top-0 right-0 -translate-y-1/2 translate-x-1/2 w-96 h-96 bg-white/10 rounded-full blur-3xl">
+            </div>
+            <div class="max-w-7xl mx-auto px-6 relative z-10">
+                <div class="max-w-3xl mx-auto text-center space-y-8">
+                    <h2 class="text-4xl md:text-5xl font-extrabold tracking-tight">Viver sem dor é possível</h2>
+                    <p class="text-xl opacity-90 leading-relaxed">
+                        Não deixe que o desconforto limite sua rotina ou tire sua liberdade. Recupere suas funções
+                        vitais com um método que respeita o seu tempo e o seu corpo.
                     </p>
-<div class="grid md:grid-cols-3 gap-8 pt-8 text-left">
-<div class="space-y-3">
-<h4 class="text-xl font-bold">Personalização</h4>
-<p class="text-sm opacity-80 leading-relaxed">Protocolos únicos desenhados especificamente para o seu histórico e objetivos de recuperação.</p>
-</div>
-<div class="space-y-3">
-<h4 class="text-xl font-bold">Inovação</h4>
-<p class="text-sm opacity-80 leading-relaxed">Uso das técnicas mais avançadas do mercado, com base em evidências científicas sólidas.</p>
-</div>
-<div class="space-y-3">
-<h4 class="text-xl font-bold">Resultados</h4>
-<p class="text-sm opacity-80 leading-relaxed">Foco no restabelecimento funcional para que você possa voltar a fazer o que ama sem restrições.</p>
-</div>
-</div>
-<div class="pt-10">
-<button class="bg-white text-primary px-10 py-5 rounded-xl font-black text-xl hover:bg-slate-100 transition-colors shadow-2xl">
-                            Agendar Minha Avaliação Agora
-                        </button>
-</div>
-</div>
-</div>
-</section>
-<!-- Testimonials -->
-<section class="py-24 bg-slate-50 dark:bg-slate-900/50" id="depoimentos">
-<div class="max-w-7xl mx-auto px-6">
-<div class="text-center mb-16 space-y-4">
-<h3 class="text-3xl font-extrabold text-slate-900 dark:text-white">O que dizem nossos pacientes</h3>
-<p class="text-slate-600 dark:text-slate-400">Histórias reais de superação e bem-estar.</p>
-</div>
-<div class="grid md:grid-cols-3 gap-8">
-<div class="bg-white dark:bg-slate-800 p-8 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-700 flex flex-col justify-between">
-<p class="italic text-slate-600 dark:text-slate-400 mb-8 leading-relaxed">"A Dra. Camila mudou minha perspectiva sobre o tratamento da DTM. Após anos de dor, finalmente encontrei alívio e um atendimento humano e técnico impecável."</p>
-<div class="flex items-center gap-4">
-<div class="w-12 h-12 rounded-full bg-slate-200 dark:bg-slate-700 overflow-hidden">
-<img data-alt="Patient profile photo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDGrqzydDMABmgj3LqIknFZh3FQgPs9S7amVH3AsOqCgJL0DFBwmkeyuBL9_MhhvKxgPmrl30Y4J2nBZ94SSouMAOp6iioZrYptcFIBAID6seS9dYno8aY2Z7IWU8upCP2Evdz-Lm7nzgUwlQtFH6cHebQMuC7_gn-FjaT7gLD883_KGGXR0ALXaChBOhtfbD67DpdSuXibafryjsrK1upyTPiNMMLYXo3aw7Iq2EnxmXoolyRGx3CwCYai9KLDNhvVojVrJ45AhEkD"/>
-</div>
-<div>
-<h5 class="font-bold text-slate-900 dark:text-white">Ana Paula S.</h5>
-<p class="text-xs text-slate-500">Paciente de DTM</p>
-</div>
-</div>
-</div>
-<div class="bg-white dark:bg-slate-800 p-8 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-700 flex flex-col justify-between">
-<p class="italic text-slate-600 dark:text-slate-400 mb-8 leading-relaxed">"A recuperação do meu pai após o AVC foi incrível. O profissionalismo da equipe em neurologia devolveu a ele a autonomia que achávamos perdida."</p>
-<div class="flex items-center gap-4">
-<div class="w-12 h-12 rounded-full bg-slate-200 dark:bg-slate-700 overflow-hidden">
-<img data-alt="Patient profile photo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD8IGTuxVEogM3XhalAMgZ6ku-00HBqBcZrKohmgKT-PzKYUbL-Q5qxfCl-TsmqCB2JbzAy3alK-EeNLz3ilASDfYLtbTxxfbgEBzyw6a0lapi-jB7LwY45wxlrfPqVRc4DAxw6WmUYBKANi8AkCbDqGcDhV_3FxUXuCGpgOPEhhn4uMuZ-oZ_0QwXZPDyh0bCrdynTCSPGA7b_bCwUMkGcrldE6wf4GISGwyMv69skly_LREFZq0PqadkWb-zPQFjHgPiCZdSxkMME"/>
-</div>
-<div>
-<h5 class="font-bold text-slate-900 dark:text-white">Ricardo Mendes</h5>
-<p class="text-xs text-slate-500">Fisioterapia Neurológica</p>
-</div>
-</div>
-</div>
-<div class="bg-white dark:bg-slate-800 p-8 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-700 flex flex-col justify-between">
-<p class="italic text-slate-600 dark:text-slate-400 mb-8 leading-relaxed">"Tratamento de paralisia facial de excelência. Em poucas semanas os resultados foram visíveis e minha autoestima voltou junto com os movimentos."</p>
-<div class="flex items-center gap-4">
-<div class="w-12 h-12 rounded-full bg-slate-200 dark:bg-slate-700 overflow-hidden">
-<img data-alt="Patient profile photo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAIcvtK1kt_PURcf5Lhs9F8SIRQwpzr8H6aIOKtFml3bZOJ_lA9r_MB7cEQ9DJzlPuJjv8inMU_fS-bcF-SuM1J8_cv8Oh_TY0NCOTbDDdiRMHbrPTsxn5TKzucn52VAbO_UgyYqfZEOwispfd8IZJPKOc8nkziO8SWRPp3OzFNF9MNloltRSqyXbrGmONprYHBwJXTxnZfhXgP1Gj5uCov8cHxxNx-kh06LZ13sbTmr_YGjVwQMob9SXS3sWyUWN01jVmGTDh1FkSz"/>
-</div>
-<div>
-<h5 class="font-bold text-slate-900 dark:text-white">Juliana Costa</h5>
-<p class="text-xs text-slate-500">Paralisia Facial</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- FAQ -->
-<section class="py-24">
-<div class="max-w-3xl mx-auto px-6">
-<h3 class="text-3xl font-extrabold text-slate-900 dark:text-white mb-12 text-center">Perguntas Frequentes</h3>
-<div class="space-y-4">
-<details class="group bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 shadow-sm overflow-hidden" open="">
-<summary class="flex items-center justify-between p-6 cursor-pointer list-none font-bold text-slate-900 dark:text-white">
+                    <div class="grid md:grid-cols-3 gap-8 pt-8 text-left">
+                        <div class="space-y-3">
+                            <h4 class="text-xl font-bold">Personalização</h4>
+                            <p class="text-sm opacity-80 leading-relaxed">Protocolos únicos desenhados especificamente
+                                para o seu histórico e objetivos de recuperação.</p>
+                        </div>
+                        <div class="space-y-3">
+                            <h4 class="text-xl font-bold">Inovação</h4>
+                            <p class="text-sm opacity-80 leading-relaxed">Uso das técnicas mais avançadas do mercado,
+                                com base em evidências científicas sólidas.</p>
+                        </div>
+                        <div class="space-y-3">
+                            <h4 class="text-xl font-bold">Resultados</h4>
+                            <p class="text-sm opacity-80 leading-relaxed">Foco no restabelecimento funcional para que
+                                você possa voltar a fazer o que ama sem restrições.</p>
+                        </div>
+                    </div>
+                    <div class="pt-10">
+                        <a class="bg-white text-primary px-10 py-5 rounded-xl font-black text-xl hover:bg-slate-100 transition-colors shadow-2xl inline-block"
+                            href="https://wa.me/5519993191957" rel="noopener noreferrer" target="_blank">
+                            Agendar Consulta Agora
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Testimonials -->
+        <section class="py-24 bg-slate-50 dark:bg-slate-900/50" id="depoimentos">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="text-center mb-16 space-y-4">
+                    <h3 class="text-3xl font-extrabold text-slate-900 dark:text-white">O que dizem nossos pacientes</h3>
+                    <p class="text-slate-600 dark:text-slate-400">Histórias reais de superação e bem-estar.</p>
+                </div>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div
+                        class="bg-white dark:bg-slate-800 p-8 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-700 flex flex-col justify-between">
+                        <p class="italic text-slate-600 dark:text-slate-400 mb-8 leading-relaxed">"A Dra. Camila mudou
+                            minha perspectiva sobre o tratamento da DTM. Após anos de dor, finalmente encontrei alívio e
+                            um atendimento humano e técnico impecável."</p>
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-full bg-slate-200 dark:bg-slate-700 overflow-hidden">
+                                <img data-alt="Patient profile photo"
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDGrqzydDMABmgj3LqIknFZh3FQgPs9S7amVH3AsOqCgJL0DFBwmkeyuBL9_MhhvKxgPmrl30Y4J2nBZ94SSouMAOp6iioZrYptcFIBAID6seS9dYno8aY2Z7IWU8upCP2Evdz-Lm7nzgUwlQtFH6cHebQMuC7_gn-FjaT7gLD883_KGGXR0ALXaChBOhtfbD67DpdSuXibafryjsrK1upyTPiNMMLYXo3aw7Iq2EnxmXoolyRGx3CwCYai9KLDNhvVojVrJ45AhEkD" />
+                            </div>
+                            <div>
+                                <h5 class="font-bold text-slate-900 dark:text-white">Ana Paula S.</h5>
+                                <p class="text-xs text-slate-500">Paciente de DTM</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="bg-white dark:bg-slate-800 p-8 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-700 flex flex-col justify-between">
+                        <p class="italic text-slate-600 dark:text-slate-400 mb-8 leading-relaxed">"A recuperação do meu
+                            pai após o AVC foi incrível. O profissionalismo da equipe em neurologia devolveu a ele a
+                            autonomia que achávamos perdida."</p>
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-full bg-slate-200 dark:bg-slate-700 overflow-hidden">
+                                <img data-alt="Patient profile photo"
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuD8IGTuxVEogM3XhalAMgZ6ku-00HBqBcZrKohmgKT-PzKYUbL-Q5qxfCl-TsmqCB2JbzAy3alK-EeNLz3ilASDfYLtbTxxfbgEBzyw6a0lapi-jB7LwY45wxlrfPqVRc4DAxw6WmUYBKANi8AkCbDqGcDhV_3FxUXuCGpgOPEhhn4uMuZ-oZ_0QwXZPDyh0bCrdynTCSPGA7b_bCwUMkGcrldE6wf4GISGwyMv69skly_LREFZq0PqadkWb-zPQFjHgPiCZdSxkMME" />
+                            </div>
+                            <div>
+                                <h5 class="font-bold text-slate-900 dark:text-white">Ricardo Mendes</h5>
+                                <p class="text-xs text-slate-500">Fisioterapia Neurológica</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="bg-white dark:bg-slate-800 p-8 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-700 flex flex-col justify-between">
+                        <p class="italic text-slate-600 dark:text-slate-400 mb-8 leading-relaxed">"Tratamento de
+                            paralisia facial de excelência. Em poucas semanas os resultados foram visíveis e minha
+                            autoestima voltou junto com os movimentos."</p>
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-full bg-slate-200 dark:bg-slate-700 overflow-hidden">
+                                <img data-alt="Patient profile photo"
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuAIcvtK1kt_PURcf5Lhs9F8SIRQwpzr8H6aIOKtFml3bZOJ_lA9r_MB7cEQ9DJzlPuJjv8inMU_fS-bcF-SuM1J8_cv8Oh_TY0NCOTbDDdiRMHbrPTsxn5TKzucn52VAbO_UgyYqfZEOwispfd8IZJPKOc8nkziO8SWRPp3OzFNF9MNloltRSqyXbrGmONprYHBwJXTxnZfhXgP1Gj5uCov8cHxxNx-kh06LZ13sbTmr_YGjVwQMob9SXS3sWyUWN01jVmGTDh1FkSz" />
+                            </div>
+                            <div>
+                                <h5 class="font-bold text-slate-900 dark:text-white">Juliana Costa</h5>
+                                <p class="text-xs text-slate-500">Paralisia Facial</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- FAQ -->
+        <section class="py-24">
+            <div class="max-w-3xl mx-auto px-6">
+                <h3 class="text-3xl font-extrabold text-slate-900 dark:text-white mb-12 text-center">Perguntas
+                    Frequentes</h3>
+                <div class="space-y-4">
+                    <details
+                        class="group bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 shadow-sm overflow-hidden"
+                        open="">
+                        <summary
+                            class="flex items-center justify-between p-6 cursor-pointer list-none font-bold text-slate-900 dark:text-white">
                             Quais são os horários de atendimento?
-                            <span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
-</summary>
-<div class="px-6 pb-6 text-slate-600 dark:text-slate-400">
-                            Atendemos de segunda a sexta, das 08h às 19h. Recomendamos o agendamento prévio via WhatsApp ou site para garantir sua vaga.
+                            <span
+                                class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+                        </summary>
+                        <div class="px-6 pb-6 text-slate-600 dark:text-slate-400">
+                            Atendemos de segunda a sexta, das 08h às 19h. Recomendamos o agendamento prévio via WhatsApp
+                            ou site para garantir sua vaga.
                         </div>
-</details>
-<details class="group bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 shadow-sm overflow-hidden">
-<summary class="flex items-center justify-between p-6 cursor-pointer list-none font-bold text-slate-900 dark:text-white">
+                    </details>
+                    <details
+                        class="group bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 shadow-sm overflow-hidden">
+                        <summary
+                            class="flex items-center justify-between p-6 cursor-pointer list-none font-bold text-slate-900 dark:text-white">
                             Vocês atendem planos de saúde?
-                            <span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
-</summary>
-<div class="px-6 pb-6 text-slate-600 dark:text-slate-400">
-                            Trabalhamos predominantemente com atendimentos particulares e sistema de reembolso. Entre em contato para saber como solicitar o reembolso junto ao seu convênio.
+                            <span
+                                class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+                        </summary>
+                        <div class="px-6 pb-6 text-slate-600 dark:text-slate-400">
+                            Trabalhamos predominantemente com atendimentos particulares e sistema de reembolso. Entre em
+                            contato para saber como solicitar o reembolso junto ao seu convênio.
                         </div>
-</details>
-<details class="group bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 shadow-sm overflow-hidden">
-<summary class="flex items-center justify-between p-6 cursor-pointer list-none font-bold text-slate-900 dark:text-white">
+                    </details>
+                    <details
+                        class="group bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 shadow-sm overflow-hidden">
+                        <summary
+                            class="flex items-center justify-between p-6 cursor-pointer list-none font-bold text-slate-900 dark:text-white">
                             Quanto tempo dura cada sessão?
-                            <span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
-</summary>
-<div class="px-6 pb-6 text-slate-600 dark:text-slate-400">
-                            As sessões variam entre 45 a 60 minutos, dependendo da complexidade do caso e do plano terapêutico estabelecido na avaliação inicial.
+                            <span
+                                class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+                        </summary>
+                        <div class="px-6 pb-6 text-slate-600 dark:text-slate-400">
+                            As sessões variam entre 45 a 60 minutos, dependendo da complexidade do caso e do plano
+                            terapêutico estabelecido na avaliação inicial.
                         </div>
-</details>
-</div>
-</div>
-</section>
-</main>
-<!-- Footer -->
-<footer class="bg-slate-900 text-slate-400 py-16">
-<div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-12">
-<div class="col-span-1 md:col-span-2 space-y-6">
-<div class="flex items-center gap-3 text-white">
-<div class="bg-primary p-2 rounded-lg">
-<span class="material-symbols-outlined text-white">medical_services</span>
-</div>
-<span class="text-xl font-extrabold tracking-tight uppercase">Dra. Camila Soffiatti</span>
-</div>
-<p class="max-w-sm">Elevando o padrão de reabilitação com ciência, tecnologia e um olhar humano dedicado a cada paciente.</p>
-<div class="flex gap-4">
-<a class="hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">social_leaderboard</span></a>
-<a class="hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">share</span></a>
-<a class="hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">alternate_email</span></a>
-</div>
-</div>
-<div class="space-y-4">
-<h6 class="text-white font-bold uppercase text-sm tracking-widest">Contato</h6>
-<p class="flex items-center gap-2"><span class="material-symbols-outlined text-sm text-primary">call</span> (11) 98765-4321</p>
-<p class="flex items-center gap-2"><span class="material-symbols-outlined text-sm text-primary">mail</span> contato@dracamilasoffiatti.com.br</p>
-<p class="flex items-center gap-2"><span class="material-symbols-outlined text-sm text-primary">location_on</span> Av. Paulista, 1000 - São Paulo, SP</p>
-</div>
-<div class="space-y-4">
-<h6 class="text-white font-bold uppercase text-sm tracking-widest">Localização</h6>
-<div class="rounded-xl overflow-hidden h-32 w-full bg-slate-800">
-<img class="w-full h-full object-cover opacity-50" data-alt="Map of São Paulo highlighting clinical area" data-location="São Paulo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCOKDj5TwwdhasVx1o_tD18VAToqR-4fIRIv1iDSZzo52aYPWd5CxuZCPCt43j9K7E3UXN_L8emExhj9ypa3mo0qvltCXlQ9vLu2b2PEmk1Gsaqj3-PQDupNW1um-hFNURrq1pMfBPPP65xqLJdcw4dAQ4wfBmhyTipjLzT1-j-SbrPPaWuoDRFhtwJ8_KHH1d6GNh_m1PeHfgbDsunPpv1MNqH8OSA5hptoROULwikswn-agTBbD6Z-dLUoRcaPI4rxPvQiw8TUd9Z"/>
-</div>
-</div>
-</div>
-<div class="max-w-7xl mx-auto px-6 pt-12 mt-12 border-t border-slate-800 text-xs flex flex-col md:row items-center justify-between gap-4">
-<p>© 2024 Dra. Camila Soffiatti. Todos os direitos reservados.</p>
-<div class="flex gap-6">
-<a class="hover:text-white" href="#">Termos de Uso</a>
-<a class="hover:text-white" href="#">Privacidade</a>
-</div>
-</div>
-</footer>
-</body></html>
+                    </details>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-400 py-16">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-12">
+            <div class="col-span-1 md:col-span-2 space-y-6">
+                <div class="flex items-center gap-3 text-white">
+                    <div class="bg-primary p-2 rounded-lg">
+                        <span class="material-symbols-outlined text-white">medical_services</span>
+                    </div>
+                    <span class="text-xl font-extrabold tracking-tight uppercase">Dra. Camila Soffiatti</span>
+                </div>
+                <p class="max-w-sm">Elevando o padrão de reabilitação com ciência, tecnologia e um olhar humano dedicado
+                    a cada paciente.</p>
+                <div class="flex gap-4">
+                    <a class="hover:text-primary transition-colors" href="#"><span
+                            class="material-symbols-outlined">social_leaderboard</span></a>
+                    <a class="hover:text-primary transition-colors" href="#"><span
+                            class="material-symbols-outlined">share</span></a>
+                    <a class="hover:text-primary transition-colors" href="#"><span
+                            class="material-symbols-outlined">alternate_email</span></a>
+                </div>
+            </div>
+            <div class="space-y-4">
+                <h6 class="text-white font-bold uppercase text-sm tracking-widest">Contato</h6>
+                <p class="flex items-center gap-2"><span
+                        class="material-symbols-outlined text-sm text-primary">call</span> (11) 98765-4321</p>
+                <p class="flex items-center gap-2"><span
+                        class="material-symbols-outlined text-sm text-primary">mail</span>
+                    contato@dracamilasoffiatti.com.br</p>
+                <p class="flex items-center gap-2"><span
+                        class="material-symbols-outlined text-sm text-primary">location_on</span> Av. Paulista, 1000 -
+                    São Paulo, SP</p>
+            </div>
+            <div class="space-y-4">
+                <h6 class="text-white font-bold uppercase text-sm tracking-widest">Localização</h6>
+                <div class="rounded-xl overflow-hidden h-32 w-full bg-slate-800">
+                    <img class="w-full h-full object-cover opacity-50"
+                        data-alt="Map of São Paulo highlighting clinical area" data-location="São Paulo"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuCOKDj5TwwdhasVx1o_tD18VAToqR-4fIRIv1iDSZzo52aYPWd5CxuZCPCt43j9K7E3UXN_L8emExhj9ypa3mo0qvltCXlQ9vLu2b2PEmk1Gsaqj3-PQDupNW1um-hFNURrq1pMfBPPP65xqLJdcw4dAQ4wfBmhyTipjLzT1-j-SbrPPaWuoDRFhtwJ8_KHH1d6GNh_m1PeHfgbDsunPpv1MNqH8OSA5hptoROULwikswn-agTBbD6Z-dLUoRcaPI4rxPvQiw8TUd9Z" />
+                </div>
+            </div>
+        </div>
+        <div
+            class="max-w-7xl mx-auto px-6 pt-12 mt-12 border-t border-slate-800 text-xs flex flex-col md:row items-center justify-between gap-4">
+            <p>© 2024 Dra. Camila Soffiatti. Todos os direitos reservados.</p>
+            <div class="flex gap-6">
+                <a class="hover:text-white" href="#">Termos de Uso</a>
+                <a class="hover:text-white" href="#">Privacidade</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
